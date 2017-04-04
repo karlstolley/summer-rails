@@ -4,7 +4,7 @@
 */
 /* stylelint-disable */
 /* Keep reset CSS to one minified line */
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
 /* Custom Site Styles */
@@ -44,8 +44,86 @@ summary {
 
 /* ========== Base Styles ========== */
 
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #a63140;
+  background: #e1fdff;
+}
+section {
+  padding: 20px;
+}
+#principles,
+#booklist,
+#technology {
+  color: #ffd58e;
+  background: #a63140;
+  font-family: Georgia, "Times New Roman", Times, Roman, serif;
+  padding: 20px;
+}
+h1,h2,h3,h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h3 {
+  text-transform: none;
+}
+a {
+  color: #296c94;
+}
+cite {
+  font-style: italic;
+}
+
 /* ========== Layout =============== */
 
 /* ========== Modules ============== */
-
+.calendar ul {
+  color: #296c94;
+}
+#booklist ul {
+  color: #e1fdff;
+}
+#booklist ul p {
+  color: #ffd58e;
+}
+h2 {
+  padding-bottom: 14px;
+}
+h3 {
+  padding-bottom: 7px;
+}
+p + ul {
+  padding-top: 14px;
+}
+ul,ol {
+  padding-bottom: 7px;
+}
+li {
+  padding-bottom: 7px;
+}
+li p {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+ul li {
+  margin-left: 20px;
+  list-style-type: square;
+}
 /* ========== State ================ */
+html.wf-active {
+  font-family: "ff-dax-web-pro";
+}
+.wf-active #principles,
+.wf-active #booklist,
+.wf-active #technology {
+  font-family: "ff-karbid-slab-web-pro";
+}
+
+.wf-active h1,
+.wf-active h2,
+.wf-active h3 {
+  font-family: "ff-dax-web-pro";
+
+}
