@@ -72,8 +72,11 @@ h3 {
 a {
   color: #296c94;
 }
-cite {
+cite,em,i {
   font-style: italic;
+}
+strong,b {
+  font-weight: bold;
 }
 
 /* ========== Layout =============== */
