@@ -46,13 +46,10 @@ summary {
 
 html {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125em; /* 18px */
+  line-height: 1.5556em; /* 28px @ 18px */
   color: #a63140;
   background: #e1fdff;
-}
-section {
-  padding: 20px;
 }
 #principles,
 #booklist,
@@ -60,18 +57,20 @@ section {
   color: #ffd58e;
   background: #a63140;
   font-family: Georgia, "Times New Roman", Times, Roman, serif;
-  padding: 20px;
 }
 h1,h2,h3,h4 {
   font-weight: bold;
   text-transform: uppercase;
 }
 h1 {
-  font-size: 91.125px;
-  line-height: 1;
+  text-align: center;
+  font-size: 2.2222em; /* 40 / 18 */
+  line-height: 1.4em; /* 56 / 40 */
 }
+
 h2 {
-  font-size: 27px;
+  font-size: 1.5em; /* 27 / 18 */
+  line-height: 1.037em; /* 28 / 27 */
 }
 
 h3 {
@@ -88,33 +87,64 @@ strong,b {
 }
 
 /* ========== Layout =============== */
+section,
+#details {
+  padding: 1.5556em 4.6667%; /* 28px / 600px */
+}
+
 
 /* ========== Modules ============== */
 h1 small {
   background: #ffd58e;
   color: #a63140;
-  font-size: 18px;
-  line-height: 1;
-  padding-top: 6px;
-  padding-bottom: 4px;
   text-align: center;
   display: block;
+  line-height: 1;
+  font-size: 0.4444em; /* 18 / 40.5 */
+  padding-top: 0.3333em; /* 6 / 18 */
+  padding-bottom: 0.2222em; /* 4 / 18 */
+  margin-bottom: 1.5555em; /* 28 / 18 */
 }
-h1 b {
+h1 {
   display: block;
-  font-weight: inherit;
-  padding: 28px 20px 0px 20px
+  background-color: #FF0;
 }
-h1 b + b { padding-top: 0px; }
 h1 i {
   font-style: normal;
-  font-size: 40.5px;
+  text-transform: none;
 }
+
+@media screen and (min-width: 320px) {
+  h1 {
+    text-align: left;
+    font-size: 5.0625em;
+  }
+  h1 small {
+    font-size: 0.1975em; /* 18 / 91.125 */
+    padding-top: 0.3333em; /* 6 / 18 */
+    padding-bottom: 0.2222em; /* 4 / 18 */
+    margin-bottom: 0;
+  }
+  h1 b {
+    display: block;
+    line-height: 1;
+    font-weight: inherit;
+    padding: 28px 20px 0px 20px;
+  }
+  h1 b + b { padding-top: 0px; }
+  h1 i {
+    font-size: 0.4444em; /* 40.5 / 91.125 */
+  }
+  #details {
+  }
+}
+
 #details {
-  padding: 28px 20px 0 20px;
+  background: #F0F;
 }
 #details li {
   list-style-type: none;
+  padding: 0;
   text-indent: -10px;
   margin-left: 10px;
 }
@@ -128,7 +158,7 @@ h1 i {
   color: #ffd58e;
 }
 h2 {
-  padding-bottom: 14px;
+  padding-bottom: 28px;
 }
 h3 {
   padding-bottom: 7px;
@@ -157,6 +187,9 @@ ul li {
   line-height: 21px;
 }
 /* ========== State ================ */
+
+
+
 html.wf-active {
   font-family: "ff-dax-web-pro";
 }
