@@ -134,12 +134,19 @@ h2 {
 h3 {
   padding-bottom: 0.3889em; /* 7px */
 }
-p + ul {
-  padding-top: 0.7778em; /* 14px */
-}
 ul,ol {
   margin-left: 1em;
   padding-bottom: 0.3889em; /* 7px */
+}
+ol.calendar {
+  margin-left: 0;
+}
+ul li {
+  margin-left: 0;
+  list-style-type: square;
+}
+p + ul {
+  padding-top: 0.7778em; /* 14px */
 }
 li {
   padding-bottom: 0.3889em; /* 7px */
@@ -147,10 +154,6 @@ li {
 li p {
   padding-top: 0.3889em; /* 7px */
   padding-bottom: 0.3889em; /* 7px */
-}
-ul li {
-  margin-left: 0;
-  list-style-type: square;
 }
 
 #footer {
