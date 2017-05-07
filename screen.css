@@ -58,7 +58,12 @@ html {
 header,
 footer,
 h2,
-h2 + p {
+h2 + p,
+.agenda,
+#links,
+#instructor,
+.deliverables,
+.requirements {
   font-family: "ff-dax-web-pro", Helvetica, Arial, sans-serif;
 }
 body {
