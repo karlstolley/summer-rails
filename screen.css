@@ -49,17 +49,17 @@ summary {
 */
 
 html {
-  font-family: "ff-dax-web-pro", Helvetica, Arial, sans-serif;
+  font-family: "ff-karbid-slab-web-pro", "Times New Roman", serif;
   padding: 0.75em 9.2308%; /* 12px @ 16px/em; 60px / 650px*/
   padding-top: 0;
   color: #296c94; /* blue */
   background: #e1fdff;
 }
-.calendar-weeks,
-#links section,
-#instructor ul,
-#policies section {
-  font-family: "ff-karbid-slab-web-pro", "Times New Roman", serif;
+header,
+footer,
+h2,
+h2 + p {
+  font-family: "ff-dax-web-pro", Helvetica, Arial, sans-serif;
 }
 body {
   font-size: 1.1875em;         /* ~ 19px base font size */
@@ -165,7 +165,7 @@ small,
 .fineprint,
 .button {
   font-family: "ff-dax-web-pro-condensed";
-  color: #777;
+  color: #555;
   display: block;
 }
 .preview small {
