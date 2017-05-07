@@ -88,7 +88,8 @@ a {
   text-decoration: none;
   border-bottom: 0.05263157895em dotted;
 }
-.preview a {
+.assigned a {
+  color: #ffd58e;
 }
 p {
   padding-bottom: 1.2631578947em;
@@ -121,7 +122,10 @@ h1 {
   font-size: 1.7768947368em; /* ~ 33.761px @ 19px/em */
   line-height: 1.0663191256em; /* ~ 36px @ 33.761px/em */
   padding-bottom: 0.3554397085em; /* ~ 12px @ 33.761px/em */
+  font-weight: bold;
+  color: #a63140; /* red */
 }
+h1 small { font-weight: normal; }
 h2 {
   font-size: 1.3440526316em; /* ~ 25.537px @ 19px/em */
   line-height: 0.9398128206em; /* ~ 24px @ 25.537px/em */
