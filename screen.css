@@ -177,11 +177,8 @@ small,
   color: #555;
   display: block;
 }
-.preview small {
-  color: #555;
-}
-.assigned small {
-  color: #555;
+small {
+  color: #296c94; /* blue */
 }
 .label .button {
   font-size: 0.744018483em; /* ~ 19px @ 25.537px/em */
@@ -274,19 +271,34 @@ nav {
   margin-bottom: 1.2631578947em;
 }
 .assigned {
-  background-color: #ffd58e;
-  color: #333;
+  background-color: rgba(41,108,148,.2); /* dark blue shade */
+  color: #222;
   padding: 1.2631578947em 11.3208% 0.6315789474em 11.3208%;
   margin-bottom: 1.8947368421em; /* ~ 36px @ 19px/em */
   margin-right: -11.3208%; /* 60px / 530px (650-120) */
   margin-left: -11.3208%;
 }
-.preview .assigned {
-  background-color: #a63140;
-  color: #EEE;
+.week h3 {
+  color: #222;
 }
+.week small,
+.preview small {
+  color: #296c94; /* dark blue */
+}
+.preview .assigned {
+  background-color: #a63140; /* red */
+}
+.assigned small,
+.preview .assigned,
+.preview .assigned h3,
 .preview .assigned small {
-  color: #AAA;
+  color: #e1fdff; /* light blue */
+}
+.assigned a {
+  color: #a63140; /* red */
+}
+.preview .assigned a {
+  color: #ffd58e;
 }
 .assigned h3 {
   padding-bottom: 0.6315789474em;
