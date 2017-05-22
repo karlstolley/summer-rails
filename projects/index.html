@@ -39,30 +39,39 @@
   <section class="primary">
     <h2 class="label">Major Projects</h2>
     <article class="preview">
-      <h3 id="project-one">Project One: Onboarding <small>Due Friday, March 3, 11:59pm&nbsp;CT</small></h3>
+      <h3 id="project-one">Project One: Alpha App <small>Due Sunday, June 11, 11:59pm CT</small></h3>
       <section class="description">
         <h4>Project Description</h4>
         <p>
-          You will create a compelling single-page design that features a sign-up process to get new
-          users to join some type of project, such as an email list, a software beta test, or an
-          open-source community. Focus on designing for an effortless, engaging entry of personal
-          information; and friendly, frictionless client-side tests and alerts for malformed,
-          missing, or incomplete information. The goal of this project is to experiment with
-          patterns of interaction that persuade someone to sign up for whatever it is you’re
-          offering, which is not at all an easy task.
+          For the first project, you will independently conceive, sketch, and build the alpha
+          version of a Rails app. The app can be anything you believe to be interesting and
+          useful. It should have only the most basic functionality and design to be viable; its
+          purpose is largely to help you learn to work with Rails and make mistakes. Think of it as
+          a proof of concept, both for the app itself, and for your own initial skills in Rails
+          development. However, note that for the remaining projects in the class, teams of two
+          to three students will develop one of the team members’ app further.
         </p>
       </section>
       <section class="goals">
         <h4>Project Goals</h4>
         <ul>
-          <li>Create a touch-friendly, mobile-first responsive web design</li>
-          <li>Experiment with design and interaction patterns for pleasing user experience</li>
           <li>
-            Design and execute a progressively enhanced page focused on system users and tasks
+            Learn to conceive and sketch the most basic features for a web application
           </li>
-          <li>Apply design principles including typography, color, and material design</li>
           <li>
-            Engage in agile, iterative web design and development, supported by version control
+            Learn to setup and build a web application with Ruby on Rails
+          </li>
+          <li>
+            Learn to search, navigate, and consult the Rails documentation and Rails Guides to
+            solve your own problems
+          </li>
+          <li>
+            Identify and understand the basic syntax, semantics, and style of the Ruby programming
+            language
+          </li>
+          <li>
+            Gain a foundational understanding of object-oriented programming as achieved through
+            Ruby
           </li>
         </ul>
       </section>
@@ -70,18 +79,13 @@
         <h4>Deliverables &amp; Milestones</h4>
         <ol>
           <li>
-            A video presentation of your work in progress, hosted on YouTube, Vimeo, or another
-            similar service and posted to Basecamp. Your Basecamp post should include the URL to
-            your GitHub repository. Include in the text of your post one or two <b>specific</b>
-            things you would like feedback or help on from the instructor and other students in the
-            class (due no later than February 8, 11:59pm).
+            A functional Rails app that can be racked up and run locally
           </li>
           <li>
-            Substantive comments critiquing at least three other student projects. (by Febraury 15,
-            11:59pm CT)
+            The GitHub repository for your app. Email the link to the instructor, but also post
+            to Basecamp
           </li>
-          <li>
-            An email to the instructor containing the projects two final deliverables (by March 3, 11:59pm CT):
+          <li>An email to the instructor containing the project’s two deliverables:
             <ol>
               <li>
                 A 4-5 sentence self-critique memo of your project and your progress in class to this
@@ -92,81 +96,39 @@
               </li>
             </ol>
           </li>
+          <li>
+            Comments on at least two other student alpha app projects during the week of June 12
+          </li>
         </ol>
       </section>
       <section class="requirements">
-        <h4>Requirements</h4>
+       <h4>Requirements</h4>
         <ul>
           <li>
-            Project must be built with only one valid well-formed HTML file, one valid CSS file,
-            and one JavaScript file.
+            Use Ruby 2.4.x and Rails 5.x
           </li>
           <li>
-            All source files in UTF-8/Unicode character encoding with Unix-style line endings (LF)
+            Strive for at least two database tables, <a href="http://guides.rubyonrails.org/association_basics.html">associated in some way</a>
           </li>
           <li>
-            Organized, readable source that is hand-written and original (no WYSIWYGs or
-            code-generators, no Bootstrap or other off-the-shelf HTML or CSS frameworks)
+            Develop a suite of functional and unit tests for your application
           </li>
           <li>
-            HTML, CSS, and JavaScript files should both be indented with 2 spaces per level of
-            indent; indent all CSS style rules inside the declaring block, and further indent all
-            rules and blocks inside your media queries
+            Frequent, detailed commits to your Git repository (include commands you may have run,
+            e.g., rails generate, in commit messages, when applicable) and frequent pushes to your
+            GitHub remote repository; Git repository must contain <b>only</b> the files and commits
+            from this project
           </li>
-          <li>HTML requirements:
-            <ol>
-              <li>
-                Only structural, semantic uses of HTML elements and attributes. <b>Absolutely no</b>
-                table markup, break tags, or any other use of HTML to achieve a particular page
-                layout.
-              </li>
-              <li>
-                At least three HTML form elements, written in conjunction with
-                <code>&lt;label&gt;</code> tags and the <code>for</code> attribute
-              </li>
-              <li>
-                Semantically structured text-based HTML content to accompany any media elements
-                (image, audio, video)
-              </li>
-            </ol>
-          </li>
-          <li>CSS requirements:
-            <ol>
-              <li>
-                CSS file should open with a set of reset styles (such as the minified Eric Meyer
-                resets from class demos)
-              </li>
-              <li>
-                Only relative units (em, rem, vm, %) in your CSS; no px, pt, or other absolute
-                units allowed
-              </li>
-              <li>
-                Use at least two min-width media queries to enhance your mobile-first styles for
-                larger screens
-              </li>
-            </ol>
-          </li>
-          <li>JavaScript requirements:
-            <ol>
-              <li>
-                JavaScript that throws no uncaught errors and is loaded unobtrusively (no JavaScript
-                event attributes in your HTML, in other words; attach events to any elements
-                requiring interaction)
-              </li>
-              <li>
-                JavaScript that uses function closures and other techniques to avoid polluting the
-                global <code>window</code> namespace
-              </li>
-              <li>
-                JavaScript that uses only asynchronous methods and callbacks
-              </li>
-            </ol>
+          <li>
+            Do development work on a <code>dev</code> branch in Git; merge only the best,
+            functional, test-passing work over to the <code>master</code> branch.
           </li>
           <li>Git requirements:
             <ol>
               <li>
                 A Git repository with frequent commits and meaningful commit messages that
-                accurately reflect each set of changes that you make
+                accurately reflect each set of changes that you make. Get in the habit of including
+                in your commit messages the commands you’ve run.
               </li>
               <li>
                 Use of the command-line Git program on your computer; no commits made through the
@@ -181,281 +143,33 @@
       </section>
     </article>
     <article>
-      <h3 id="project-two">Project Two: Web-Portal Redesign <small>Due Monday, April 17, 11:59pm&nbsp;CT</small></h3>
-      <section class="description">
-        <h4>Project Description</h4>
-        <p>
-          Some of the very worst designed websites you’ll come across are for banking, credit card
-          payment, HR portals, and other non-optional websites for certain classes of customers or
-          workers. Self-selected teams of 3-4 students will redesign the MyIIT login page, the
-          welcome page/tab, and all necessary steps for achieving a specific student-user task (some
-          examples: generating a class schedule, dropping a class, paying a tuition bill, removing a
-          registration hold, or any other task that students complete through MyIIT). Your
-          redesigned portal should be designed and developed according to sound principles of
-          human-computer interaction, user experience, and emotional design.
-        </p>
-      </section>
-      <section class="goals">
-        <h4>Project Goals</h4>
-        <ul>
-          <li>Conduct task analysis and apply the information gained to a user-centered design</li>
-          <li>
-            Build interface modules/elements from a basic design foundation of alignment, contrast,
-            proximity, and repetition
-          </li>
-          <li>
-            Apply design principles including color/material, typography, accessible media, and
-            grid-based design
-          </li>
-          <li>
-            Execute a progressively enhanced, touch-friendly, mobile-first responsive design focused
-            on system users and tasks
-          </li>
-          <li>
-            Write informative text content; catch error conditions and guide users accordingly
-          </li>
-          <li>Experiment with design and interaction patterns for pleasing user experience</li>
-          <li>
-            Engage in agile, iterative web design and development within a team-based workflow on
-            GitHub, via pull requests and code reviews
-          </li>
-          </li>
-        </ul>
-      </section>
-      <section class="deliverables">
-        <h4>Deliverables &amp; Milestones</h4>
-        <ol>
-          <li>
-            Whole team: A screen-by-screen task analysis of your chosen MyIIT task (again, e.g.,
-            generating a class schedule, dropping a class, paying a tuition bill, removing a
-            registration hold) posted to Basecamp, with relevant <b>anonymized</b> screen shots
-            (black out any personally identifiable information). Post to Basecamp (due no later than
-            March 22, 11:59pm CT).
-          </li>
-          <li>
-            Whole team: A video presentation of your team’s work in progress, hosted on YouTube,
-            Vimeo, or another similar service and posted to Basecamp. Your Basecamp post should
-            include the URL to your team’s GitHub repository. Include in the text of your post one
-            or two <b>specific</b> things you would like feedback or help on from the instructor and
-            other students in the class (due no later than April 10, 11:59pm CT).
-          </li>
-          <li>
-            Each team member: Substantive comments critiquing at least three other team projects (by
-            April 14, 11:59pm CT).
-          </li>
-          <li>
-            Each team member: an email to the instructor containing the project’s three final
-            deliverables (by April 17, 11:59pm CT):
-            <ol>
-              <li>
-                A 4-5 sentence self-critique memo of your project and your progress in class to this
-                point
-              </li>
-              <li>
-                A 2-3 sentence critique of each group member’s work on the project
-              </li>
-              <li>
-                The https:// links to your individual and group GitHub repositories
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </section>
-      <section class="requirements">
-        <h4>Requirements</h4>
-        <ul>
-          <li>
-            All source files in UTF-8/Unicode character encoding with Unix-style line endings (LF)
-          </li>
-          <li>
-            Organized, readable source that is hand-written and original (no WYSIWYGs or
-            code-generators, no Bootstrap or other off-the-shelf HTML or CSS frameworks)
-          </li>
-          <li>
-            HTML, CSS, and JavaScript files should all be indented with 2 spaces per level of
-            indent; indent all CSS style rules inside the declaring block, and further indent all
-            rules and blocks inside your media queries
-          </li>
-          <li>HTML requirements:
-            <ol>
-              <li>
-                Only structural, semantic uses of HTML elements and attributes. <b>Absolutely no</b>
-                table markup, break tags, or any other use of HTML to achieve a particular page
-                layout.
-              </li>
-              <li>
-                Valid HTML form elements, written in conjunction with <code>&lt;label&gt;</code>
-                tags and the <code>for</code> attribute
-              </li>
-              <li>
-                Semantically structured text-based HTML content to accompany any media elements
-                (image, audio, video)
-              </li>
-            </ol>
-          </li>
-          <li>CSS requirements:
-            <ol>
-              <li>
-                CSS file should open with a set of reset styles (such as the minified Eric Meyer
-                resets from class demos); consider also the Normalize.css styles for forms
-              </li>
-              <li>
-                Only relative units (em, rem, vm, %) in your CSS; no px, pt, or other absolute
-                units allowed
-              </li>
-              <li>
-                Use at least two min-width media queries to enhance your mobile-first styles for
-                larger screens
-              </li>
-            </ol>
-          </li>
-          <li>JavaScript requirements:
-            <ol>
-              <li>
-                JavaScript that throws no uncaught errors and is loaded unobtrusively (no JavaScript
-                event attributes in your HTML, in other words; attach events to any elements
-                requiring interaction)
-              </li>
-              <li>
-                JavaScript that uses function closures and other techniques to avoid polluting the
-                global <code>window</code> namespace
-              </li>
-              <li>
-                JavaScript that uses only asynchronous methods and callbacks
-              </li>
-            </ol>
-          </li>
-          <li>Git requirements:
-            <ol>
-              <li>
-                Whole team: A shared team Git repository with frequent commits from each team member
-                and meaningful commit messages that accurately reflect each set of changes
-              </li>
-              <li>
-                Each team member: An individual Git repository with feature branches, frequent
-                commits, and meaningful commit messages that accurately reflect each set of changes
-                that you make, including experimental work that you ultimately might not push
-                upstream to the shared group repository
-              </li>
-              <li>
-                All GitHub repositories (team and individual) must contain <b>only</b> the files and
-                commits from this project
-              </li>
-              <li>
-                Use of the command-line Git program on your computer; no commits made through the
-                GitHub web interface (this isn’t kindergarten), apart from merge commits created
-                as part of code reviews/pull requests
-              </li>
-            </ol>
-          </li>
-        </ul>
-      </section>
-    </article>
-    <article>
-      <h3 id="project-three">
-        Project Three: User-Tested, Revised Web Portal
-        <small>Due Wednesday, May 3, 11:59pm&nbsp;CT</small>
+      <h3 id="project-two">Project Two: Web-Portal Redesign
+        <small>Due Sunday, July 2, 11:59pm&nbsp;CT</small>
       </h3>
       <section class="description">
         <h4>Project Description</h4>
         <p>
-          The final project of the course asks you to subject your group’s Web Portal Redesign
-          project to a series of low-stakes user tests, and to suggest improvements to the Web
-          Portal Redesign project based on what you learn through your user tests.
+          For the beta app, you will work in small teams. Your team can either begin again with the
+          app created by one of your team’s members for Project One, or rework/abandon an idea for a
+          brand-new app. Requirements and deliverables are similar to those of Project One; however,
+          you will more fully flesh out the design of your app. It must include a way to
+          authenticate users, preferably using an OAuth-based schema. <b>Full project description
+          will be posted by 6/6</b>.
         </p>
+      </section>
+    </article>
+    <article>
+      <h3 id="project-three">
+        ITMD 513 Only: SME Rails Module Project
+        <small>Due Sunday, June 18, 11:59pm&nbsp;CT</small>
+      </h3>
+      <section class="description">
+        <h4>Project Description</h4>
         <p>
-          You should structure your tests around the guidance in Chapter 9 of Krug’s book. You are
-          welcome to use as a starting point his sample script and recording release
-          form available <a href="http://www.sensible.com/downloads-rsme.html">at Krug’s
-          website</a>. However, your script must be modified to match your specific project and
-          tasks, obviously.
+          You will serve as a subject-matter expert (SME) and resource for other students in the
+          class. Your SME area will be one of the core modules of Rails. <b>Full project description
+          and assignments will be posted by 5/30</b>.
         </p>
-      </section>
-      <section class="goals">
-        <h4>Project Goals</h4>
-        <ul>
-          <li>
-            Evaluate user interface designs with human subjects.
-          </li>
-          <li>
-            Demonstrate how user-centered concerns can be incorporated into system development life
-            cycles.
-          </li>
-          <li>
-            Explain the need to evaluate system usability.
-          </li>
-          <li>
-            Conduct usability tests on mobile and traditional devices.
-          </li>
-        </ul>
-      </section>
-      <section class="deliverables">
-        <h4>Deliverables &amp; Milestones</h4>
-        <p>
-          Unlike previous projects, your deliverables for this assignment should be turned in to the
-          instructor as a Dropbox or Google Drive share URL. Do <b>not</b> use the internal sharing
-          function on Dropbox or Drive with the instructor. Generate a shareable URL that you paste
-          yourself in an email to the instructor. The URL should point to a folder containing
-          thoughtfully named files and folders containing each deliverable listed below.
-        </p>
-        <ol class="deliverables">
-          <li>
-            Testing script (submitted to instructor before testing, by 11:59pm CT on 4/19), which
-            should include a welcome to your participant, an explanation of the process, and an
-            outline of the exact tasks you will be asking participants to complete
-          </li>
-          <li>
-            A/V release form for each participant to sign (submitted to instructor before testing,
-            by 11:59pm CT on 4/19)
-          </li>
-          <li>
-            Site plan: location, equipment, setup/arrangement (submitted to instructor before
-            testing, by 11:59pm CT on 4/19)
-          </li>
-          <li>
-            Video recording of each participant session (due by 11:59pm CT on 5/3)
-          </li>
-          <li>
-            Testing notes + 3 major issues per observer, per participant (due by 11:59pm CT on 5/3)
-          </li>
-          <li>
-            A group-authored recommendation report (due by 11:59pm CT on 5/3) on three most pressing
-            issues identified through your testing, including:
-            <ul>
-              <li>an explanation as to why the issues you’ve selected are most pressing</li>
-              <li>possible approach to implementing fixes/improvements to address the issue</li>
-              <li>future usability tests you’d run to ensure the quality of the fix</li>
-            </ul>
-          </li>
-          <li>
-            An individually authored 4-5 sentence self-critique of your project and your progress in
-            class this semester in addition to 4-5 sentence critiques for each of your group
-            members, emailed to the instructor (due by 11:59pm CT on 5/3)
-          </li>
-        </ol>
-      </section>
-      <section class="requirements">
-        <h4>Requirements</h4>
-        <ul>
-          <li>
-            Test your site with three different participants <b>not</b> in our class. At least one
-            participant should use a mobile device (phone or tablet); at least one should use a
-            traditional device (desktop or laptop)
-          </li>
-          <li>
-            When possible, have participants use their own devices (but have a backup device ready
-            to use)
-          </li>
-          <li>
-            Figure out how to best involve online students in your group who cannot be present on
-            campus for testing; include those details in your site plan
-          </li>
-          <li>
-            Submit all deliverables as an email to the instructor. The email must contain your
-            individual reflection memo and a URL to a shared Dropbox or Google Drive folder to which
-            all group members have read/write access
-          </li>
-        </ul>
       </section>
     </article>
   </section>
