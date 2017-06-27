@@ -315,8 +315,8 @@ nav {
   padding-bottom: 0;
 }
 
-/* Fix for when #current-week is the very last week; corrects spacing after .assigned */
-#current-week:last-child {
+/* Fix for the very last week; corrects spacing after .assigned */
+.week:last-child {
   padding-bottom: 0.6315789474em; /* Still needs to be tweaked against margin-bottom on .assigned */
 }
 
@@ -420,4 +420,3 @@ nav {
     display: flex; /* My life for element/container queries...*/
   }
 }
-
